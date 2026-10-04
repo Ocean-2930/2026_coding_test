@@ -53,7 +53,7 @@ def solution(tasks):
                 break
 
             buff = heapq.heappop(q)
-            heapq.heappush(memq, (buff[1], buff[0], buff[2]))
+            heapq.heappush(memq, (buff[1], buff[2]))
             time = buff[0]
 
         task = heapq.heappop(memq)
